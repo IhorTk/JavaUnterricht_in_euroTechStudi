@@ -9,6 +9,8 @@ public class d26_dz {
         System.out.println("Максимальное значение в массиве:   " + findMax(arr));
         System.out.println("Минимальное значение в массиве:    " + findMin(arr));
         System.out.println("Повторяющиеся элементы в массиве:  " + findDublicate(arr));
+        showDublicate(arr);
+
 
 
 
@@ -40,11 +42,11 @@ public class d26_dz {
         }
         return dubli;
     }
-    public void showDublicate(int[] arr){
+    public static void showDublicate(int[] arr){
         for (int i = 0; i < arr.length; i++) {
             for (int j = i+1; j < arr.length; j++) {
                 if (arr[i] == arr[j] && i !=1){
-                    System.out.println(arr[j]+ "  ");
+                    System.out.print(arr[j]+ "  ");
                 }
             }
         }
